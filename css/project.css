@@ -4,7 +4,7 @@
 
 
 #section-1 {
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -18,11 +18,11 @@
 
 a {
     text-decoration: none;
-    color: #D94B18;
+    color: #173440;
 }
 
-a :hover {
-    color: white; 
+a:hover {
+    color: #F2D230; 
     }
 
 .rain {
@@ -30,7 +30,7 @@ a :hover {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    left: 52%;
     text-align: center;
 }
 

@@ -86,7 +86,7 @@
     font-size: 50px;
 }
 
-#section-3 {
+/* #section-3 {
     text-align: start;
     width: 100%;
     height: 100vh;
@@ -99,18 +99,19 @@
     width: 100%;
     height: 100vh;
     font-size: 50px;
-}
+} */
 
 #tall {
     width: 100px;
     height: 100px;
+    font-size: 70px;
     animation-name: stretchAnimation;
     animation-delay: 2s;
     animation-direction: normal;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     color: white;
 }
 
@@ -124,7 +125,6 @@
         background-color: #F28729;
         color: #333333;
         font-size: 50px;
-
     }
 
 .link {
@@ -176,10 +176,13 @@
 }
 
 @keyframes stretchAnimation {
-    0%, 100% {
-        transform: scale(1);
+    0% {
+        transform: scaleY(1);
     }
-    50% {
-        transform: scale(4);
+    100% {
+        transform: scaleY(5);
+    }
+    0% {
+        transform: scaleY(1);
     }
 }
